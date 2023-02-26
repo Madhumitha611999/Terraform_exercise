@@ -1,6 +1,6 @@
 resource "aws_subnet" "example" {
   vpc_id     = vpc-0b097c09de2c10c10
-  cidr_block = "172.31.0.0/24"
+  cidr_block = "172.31.1.0/24"
 }
 
 

@@ -1,6 +1,10 @@
+resource "aws_vpc" "example_" {
+  cidr_block = "10.0.0.0/16" # Replace this with your desired VPC CIDR block
+}
+
 resource "aws_subnet" "example" {
-  vpc_id     = vpc-0b097c09de2c10c10
-  cidr_block = "172.31.1.0/24"
+  vpc_id     = aws_vpc.example_.id
+  cidr_block = "10.0.1.0/24"
 }
 
 
